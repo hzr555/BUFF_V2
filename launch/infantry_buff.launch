@@ -1,0 +1,21 @@
+<launch>
+    <!-- 
+        这个启动文件适用于步兵。
+        以下节点将会被启动：
+        * 大恒相机节点
+        * 相机录制节点
+        * 自瞄主程序节点
+        * 自瞄调试节点
+        * 串口通讯节点
+    -->
+    <!--<node name="mindversion_camera" pkg="camera_pkg_mindvision" type="camera_pkg_mindvision_node" output="screen" respawn="true"></node>-->
+    <node name="daheng_camera" pkg="camera_pkg_dahua" type="camera_pkg_dahua_node" output="screen" respawn="true"></node>
+    <!--<node name="uart_process_main" pkg="uart_process_2" type="rm2020_uart_2stm32" output="screen" respawn="true"></node>-->
+    <node name="camera_recorder" pkg="camera_recorder" type="camera_recorder_node" output="screen" respawn="true"></node>
+    <node name="buff" pkg="buff" type="buff_node" output="screen" respawn="true" args="--debug"></node>
+    <node name="web_video_server" type="web_video_server" pkg="web_video_server" output="screen" respawn="true">
+        <param name="port" value="9091"></param>
+    </node>
+
+
+</launch>

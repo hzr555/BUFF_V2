@@ -1,0 +1,8 @@
+prefix=/home/huangzengrong/Buff/install
+
+Name: camera_usb_v4l
+Description: Description of camera_usb_v4l
+Version: 0.3.6
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcamera_usb_v4l
+Requires: 

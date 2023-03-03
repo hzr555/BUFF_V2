@@ -1,0 +1,14 @@
+<launch>
+    <!-- 
+        这个启动文件适用于本地调试。
+        以下节点将会被启动：
+        * 打符主程序节点
+        * 打符调试节点(还没写)
+        * ROS 诊断监视器
+    -->
+    <node name="camera_file" pkg="camera_file" type="camera_file_node" output="screen" respawn="true"></node>
+    <node name="buff" pkg="buff" type="buff_node" output="screen" respawn="true" args="--debug"></node>
+    <node name="rqt_robot_monitor" pkg="rqt_robot_monitor" type="rqt_robot_monitor" output="screen" respawn="false"></node>
+    <node name="uart_process_main" pkg="uart_process_2" type="rm2020_uart_2stm32" output="screen" respawn="true"></node>
+
+</launch>

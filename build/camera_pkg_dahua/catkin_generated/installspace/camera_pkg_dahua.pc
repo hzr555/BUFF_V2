@@ -1,0 +1,8 @@
+prefix=/home/huangzengrong/Buff/install
+
+Name: camera_pkg_dahua
+Description: Description of camera_pkg_dahua
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

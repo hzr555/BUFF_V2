@@ -1,0 +1,8 @@
+prefix=/home/huangzengrong/Buff/devel
+
+Name: camera_recorder
+Description: Description of camera_recorder
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,2 @@
+buff:camera_file:camera_pkg_daheng:camera_pkg_dahua:camera_recorder:camera_usb_v4l:sagitari_debug:uart_process_2
+-DCATKIN_DEVEL_PREFIX=/home/huangzengrong/Buff/devel -DCMAKE_INSTALL_PREFIX=/home/huangzengrong/Buff/install -G Unix Makefiles
